@@ -1,0 +1,33 @@
+/* Gallery Grid */
+.gallery__grid {
+    display: grid;
+    gap: 10px; /* Adjust gap between images as needed */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+  }
+  
+  /* Styles for individual gallery items */
+  .gallery__item {
+    overflow: hidden; /* Hide overflow for contained images */
+    position: relative; /* Position relative for image adjustment */
+  }
+  
+  /* Styles for images within gallery items */
+  .gallery__item img {
+    width: 100%; /* Full width images */
+    height: 100%; /* Full height images */
+    object-fit: cover; /* Ensure images cover the container */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Zoom effect on hover for gallery images */
+  .gallery__item:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Optional: Style adjustments for better aesthetics */
+  .gallery__grid {
+    margin: 0 auto; /* Center the grid */
+    max-width: 1200px; /* Limit max width for larger screens */
+    padding: 0 10px; /* Add some padding */
+  }
+  
